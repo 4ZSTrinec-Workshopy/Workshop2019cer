@@ -1,4 +1,4 @@
 # Workshop2019cer
-[Unity](https://store.unity.com/download)
+[Unity Download](https://store.unity.com/download)
 
-[Visual Studio](https://visualstudio.microsoft.com/downloads/)
+[Visual Studio Download](https://visualstudio.microsoft.com/downloads/)
