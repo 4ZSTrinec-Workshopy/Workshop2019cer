@@ -5,17 +5,17 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    int score = 0;
-    Text scoreText;
+    int score = 0; // Proměná score
+    Text scoreText; // Text, který se bude zobrazovat na obrazovce
 
-    void Start()
+    void Start() // Při vytvoření objektu proved'...
     {
-        InvokeRepeating("IncrementScore", 0, 1);
-        scoreText = this.GetComponent<Text>();
+        InvokeRepeating("IncrementScore", 0, 1); // Co 1 sekundu opakuj...
+        scoreText = this.GetComponent<Text>(); // Nastav scoreText na objekt s tímto skriptem
     }
 
-    void IncrementScore() {
-        score++;
-        scoreText.text = "Score: " + score;
+    void IncrementScore() { // Funkce co se bude opakovat každou sekundu
+        score++; // Přičti ke score 1
+        scoreText.text = "Score: " + score; // Nastav, aby text zobrazoval hodnotu score
     }
 }

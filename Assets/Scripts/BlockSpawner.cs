@@ -16,7 +16,7 @@ using UnityEngine;
 public class BlockSpawner : MonoBehaviour
 {
     public GameObject obstacle; // Kostka
-    private float delay = 0.2f; 
+    private float delay = 0.2f; // Zpoždění (0,2 s)
 
     void Start()
     {

@@ -15,12 +15,12 @@ using UnityEngine;
 
 public class BlockDestroyer : MonoBehaviour
 {
-    void Start()
+    void Start() // Při vytvoření objektu proved'...
     {
         InvokeRepeating("Destroy", 3, 3); // Opakuj co 3 sekundy funkci Destroy
     }
 
-    void Destroy()
+    void Destroy() // Funkce co se bude opakovat každé 3 sekundy
     {
         Destroy(gameObject); // Znič kostku (Block)
     }
