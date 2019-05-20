@@ -1,0 +1,11 @@
+Library/*
+obj/Debug/*
+*.meta
+Packages/*
+Temp/*
+.vs/Workshop2019cer/v15/.suo
+.vs/Workshop2019cer/v15/Server/sqlite3/db.lock
+*.asset
+*.ide
+*.ide-shm
+*.ide-wal
