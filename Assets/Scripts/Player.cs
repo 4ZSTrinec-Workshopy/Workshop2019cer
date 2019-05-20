@@ -20,9 +20,16 @@ public class Player : MonoBehaviour
         {
             transform.position += Vector3.right * 10 * Time.deltaTime; /* To samé akorát do prava */
         }
+        if (transform.position.x >= 12.5) { // Když hrát chce opustit scénu tak...
+            SceneManager.LoadScene("SampleScene"); // Restart
+        }
+        else if (transform.position.x <= -12.5) // Když hrát chce opustit scénu tak...
+        {
+            SceneManager.LoadScene("SampleScene"); // Restart
+        }
     }
 
-    private void OnCollisionEnter(Collision collision) // Když se dotkneš objektu...
+    void OnCollisionEnter(Collision collision) // Když se dotkneš objektu...
     {
         if (collision.collider.tag == "block") { // Při dotyku s objektem s tagem block
             SceneManager.LoadScene("SampleScene"); // Restartuj scénu
