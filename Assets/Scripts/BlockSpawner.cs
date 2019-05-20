@@ -24,6 +24,6 @@ public class BlockSpawner : MonoBehaviour
     }
 
     void Spawn() {
-        Instantiate(obstacle, new Vector3(Random.Range(-10, 10), 10, 0), Quaternion.identity); /* Vytvoř kostku na náhodné Xové pozici od -10 až po 10 ve vyšce 10 (Y) a hloubce 0 (Z) */ /* Vector3, protože pracujeme ve 3D */
+        Instantiate(obstacle, new Vector3(Random.Range(-12, 12), 10, 0), Quaternion.identity); /* Vytvoř kostku na náhodné Xové pozici od -10 až po 10 ve vyšce 10 (Y) a hloubce 0 (Z) */ /* Vector3, protože pracujeme ve 3D */
     }
 }
